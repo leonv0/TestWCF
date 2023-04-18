@@ -1,0 +1,11 @@
+C:\Users\leo\source\repos\TestWCF\WCF_Service\WCF_Service\bin\Debug\WCF_Service.exe.config
+C:\Users\leo\source\repos\TestWCF\WCF_Service\WCF_Service\bin\Debug\WCF_Service.exe
+C:\Users\leo\source\repos\TestWCF\WCF_Service\WCF_Service\bin\Debug\WCF_Service.pdb
+C:\Users\leo\source\repos\TestWCF\WCF_Service\WCF_Service\obj\Debug\WCF_Service.csproj.AssemblyReference.cache
+C:\Users\leo\source\repos\TestWCF\WCF_Service\WCF_Service\obj\Debug\WCF_Service.csproj.SuggestedBindingRedirects.cache
+C:\Users\leo\source\repos\TestWCF\WCF_Service\WCF_Service\obj\Debug\WCF_Service.csproj.CoreCompileInputs.cache
+C:\Users\leo\source\repos\TestWCF\WCF_Service\WCF_Service\obj\Debug\WCF_Service.exe
+C:\Users\leo\source\repos\TestWCF\WCF_Service\WCF_Service\obj\Debug\WCF_Service.pdb
+C:\Users\leo\source\repos\TestWCF\WCF_Service\WCF_Service\bin\Debug\Interfaces.dll
+C:\Users\leo\source\repos\TestWCF\WCF_Service\WCF_Service\bin\Debug\Interfaces.pdb
+C:\Users\leo\source\repos\TestWCF\WCF_Service\WCF_Service\obj\Debug\WCF_Service.csproj.CopyComplete

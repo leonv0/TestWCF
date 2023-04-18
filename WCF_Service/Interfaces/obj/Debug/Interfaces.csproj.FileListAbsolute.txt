@@ -1,0 +1,6 @@
+C:\Users\leo\source\repos\TestWCF\WCF_Service\Interfaces\bin\Debug\Interfaces.dll
+C:\Users\leo\source\repos\TestWCF\WCF_Service\Interfaces\bin\Debug\Interfaces.pdb
+C:\Users\leo\source\repos\TestWCF\WCF_Service\Interfaces\obj\Debug\Interfaces.csproj.AssemblyReference.cache
+C:\Users\leo\source\repos\TestWCF\WCF_Service\Interfaces\obj\Debug\Interfaces.csproj.CoreCompileInputs.cache
+C:\Users\leo\source\repos\TestWCF\WCF_Service\Interfaces\obj\Debug\Interfaces.dll
+C:\Users\leo\source\repos\TestWCF\WCF_Service\Interfaces\obj\Debug\Interfaces.pdb
