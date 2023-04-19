@@ -1,0 +1,10 @@
+C:\Users\leo\source\repos\TestWCF\WCF_Service\ServiceSetup\bin\Debug\ServiceSetup.msi
+C:\Users\leo\source\repos\TestWCF\WCF_Service\ServiceSetup\bin\Debug\ServiceSetup.wixpdb
+obj\Debug\Product.wixobj
+obj\Debug\WCFServiceSetup.wixproj.BindContentsFileListnull.txt
+obj\Debug\WCFServiceSetup.wixproj.BindOutputsFileListnull.txt
+obj\Debug\WCFServiceSetup.wixproj.BindBuiltOutputsFileListnull.txt
+C:\Users\leo\source\repos\TestWCF\WCF_Service\ServiceSetup\bin\Debug\cab1.cab
+C:\Users\leo\source\repos\TestWCF\WCF_Service\WCF_ServiceSetup\bin\Debug\cab1.cab
+C:\Users\leo\source\repos\TestWCF\WCF_Service\WCF_ServiceSetup\bin\Debug\WCF_ServiceSetup.msi
+C:\Users\leo\source\repos\TestWCF\WCF_Service\WCF_ServiceSetup\bin\Debug\WCF_ServiceSetup.wixpdb

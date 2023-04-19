@@ -1,0 +1,3 @@
+..\WCF_Service\bin\Debug\Interfaces.dll
+ReadMe.txt
+..\WCF_Service\bin\Debug\WCF_Service.exe
