@@ -40,3 +40,4 @@ C:\Users\leo\source\repos\TestWCF\WCF_Service\WinForms_Client\obj\Debug\net7.0-w
 C:\Users\leo\source\repos\TestWCF\WCF_Service\WinForms_Client\obj\Debug\net7.0-windows\WinForms_Client.pdb
 C:\Users\leo\source\repos\TestWCF\WCF_Service\WinForms_Client\obj\Debug\net7.0-windows\WinForms_Client.genruntimeconfig.cache
 C:\Users\leo\source\repos\TestWCF\WCF_Service\WinForms_Client\obj\Debug\net7.0-windows\ref\WinForms_Client.dll
+C:\Users\leo\source\repos\TestWCF\WCF_Service\WinForms_Client\obj\Debug\net7.0-windows\WinForms_Client.MainForm.resources

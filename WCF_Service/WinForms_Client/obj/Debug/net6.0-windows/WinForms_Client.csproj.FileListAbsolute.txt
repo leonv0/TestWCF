@@ -1,5 +1,4 @@
 C:\Users\leo\source\repos\TestWCF\WCF_Service\WinForms_Client\obj\Debug\net6.0-windows\WinForms_Client.csproj.AssemblyReference.cache
-C:\Users\leo\source\repos\TestWCF\WCF_Service\WinForms_Client\obj\Debug\net6.0-windows\WinForms_Client.Form1.resources
 C:\Users\leo\source\repos\TestWCF\WCF_Service\WinForms_Client\obj\Debug\net6.0-windows\WinForms_Client.csproj.GenerateResource.cache
 C:\Users\leo\source\repos\TestWCF\WCF_Service\WinForms_Client\obj\Debug\net6.0-windows\WinForms_Client.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\leo\source\repos\TestWCF\WCF_Service\WinForms_Client\obj\Debug\net6.0-windows\WinForms_Client.AssemblyInfoInputs.cache
@@ -43,3 +42,4 @@ C:\Users\leo\source\repos\TestWCF\WCF_Service\WinForms_Client\obj\Debug\net6.0-w
 C:\Users\leo\source\repos\TestWCF\WCF_Service\WinForms_Client\obj\Debug\net6.0-windows\WinForms_Client.genruntimeconfig.cache
 C:\Users\leo\source\repos\TestWCF\WCF_Service\WinForms_Client\obj\Debug\net6.0-windows\ref\WinForms_Client.dll
 C:\Users\leo\source\repos\TestWCF\WCF_Service\WinForms_Client\bin\Debug\net6.0-windows\WinForms_Client.dll.config
+C:\Users\leo\source\repos\TestWCF\WCF_Service\WinForms_Client\obj\Debug\net6.0-windows\WinForms_Client.MainForm.resources

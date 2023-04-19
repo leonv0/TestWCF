@@ -18,31 +18,7 @@ public interface ITestServiceChannel : ITestService, System.ServiceModel.IClient
 [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
 public partial class TestServiceClient : System.ServiceModel.ClientBase<ITestService>, ITestService
 {
-    /*
-    public TestServiceClient()
-    {
-    }
     
-    public TestServiceClient(string endpointConfigurationName) : 
-            base(endpointConfigurationName)
-    {
-    }
-    
-    public TestServiceClient(string endpointConfigurationName, string remoteAddress) : 
-            base(endpointConfigurationName, remoteAddress)
-    {
-    }
-    
-    public TestServiceClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
-            base(endpointConfigurationName, remoteAddress)
-    {
-    }
-    
-    public TestServiceClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
-            base(binding, remoteAddress)
-    {
-    }
-*/    
     public string EchoTest(string msg)
     {
         return base.Channel.EchoTest(msg);
