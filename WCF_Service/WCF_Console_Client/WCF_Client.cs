@@ -9,20 +9,6 @@
 //------------------------------------------------------------------------------
 using Interfaces;
 
-
-/*
-[System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-[System.ServiceModel.ServiceContractAttribute(ConfigurationName="ITestService")]
-public interface ITestService
-{
-    
-    [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ITestService/EchoTest", ReplyAction="http://tempuri.org/ITestService/EchoTestResponse")]
-    string EchoTest(string msg);
-    
-    [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ITestService/EchoTest", ReplyAction="http://tempuri.org/ITestService/EchoTestResponse")]
-    System.Threading.Tasks.Task<string> EchoTestAsync(string msg);
-}
-*/
 [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
 public interface ITestServiceChannel : ITestService, System.ServiceModel.IClientChannel
 {
@@ -32,7 +18,7 @@ public interface ITestServiceChannel : ITestService, System.ServiceModel.IClient
 [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
 public partial class TestServiceClient : System.ServiceModel.ClientBase<ITestService>, ITestService
 {
-    
+    /*
     public TestServiceClient()
     {
     }
@@ -56,15 +42,9 @@ public partial class TestServiceClient : System.ServiceModel.ClientBase<ITestSer
             base(binding, remoteAddress)
     {
     }
-    
+*/    
     public string EchoTest(string msg)
     {
         return base.Channel.EchoTest(msg);
     }
-    /*
-    public System.Threading.Tasks.Task<string> EchoTestAsync(string msg)
-    {
-        return base.Channel.EchoTestAsync(msg);
-    }
-    */
 }

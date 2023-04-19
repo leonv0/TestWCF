@@ -17,7 +17,7 @@ namespace WPF_Client_Sender
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     public partial class TestServiceClient : System.ServiceModel.ClientBase<Interfaces.ITestService>, Interfaces.ITestService
     {
-
+        /*
         public TestServiceClient()
         {
         }
@@ -41,16 +41,11 @@ namespace WPF_Client_Sender
                 base(binding, remoteAddress)
         {
         }
-
+        */
         public string EchoTest(string msg)
         {
             return base.Channel.EchoTest(msg);
         }
-        /*
-        public System.Threading.Tasks.Task<string> EchoTestAsync(string msg)
-        {
-            return base.Channel.EchoTestAsync(msg);
-        }
-        */
+
     }
 }
