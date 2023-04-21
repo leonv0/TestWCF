@@ -15,9 +15,5 @@ namespace WCF_Service
             return string.Format("Test reply: {0}", msg);
         }
 
-        //public System.Threading.Tasks.Task<string> EchoTestAsync(string msg)
-        //{
-        //    throw new NotImplementedException();
-        //}
     }
 }

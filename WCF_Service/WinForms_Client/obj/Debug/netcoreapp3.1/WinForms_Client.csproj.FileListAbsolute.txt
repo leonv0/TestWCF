@@ -1,7 +1,0 @@
-C:\Users\leo\source\repos\TestWCF\WCF_Service\WinForms_Client\obj\Debug\netcoreapp3.1\WinForms_Client.csproj.AssemblyReference.cache
-C:\Users\leo\source\repos\TestWCF\WCF_Service\WinForms_Client\obj\Debug\netcoreapp3.1\WinForms_Client.Form1.resources
-C:\Users\leo\source\repos\TestWCF\WCF_Service\WinForms_Client\obj\Debug\netcoreapp3.1\WinForms_Client.csproj.GenerateResource.cache
-C:\Users\leo\source\repos\TestWCF\WCF_Service\WinForms_Client\obj\Debug\netcoreapp3.1\WinForms_Client.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\leo\source\repos\TestWCF\WCF_Service\WinForms_Client\obj\Debug\netcoreapp3.1\WinForms_Client.AssemblyInfoInputs.cache
-C:\Users\leo\source\repos\TestWCF\WCF_Service\WinForms_Client\obj\Debug\netcoreapp3.1\WinForms_Client.AssemblyInfo.cs
-C:\Users\leo\source\repos\TestWCF\WCF_Service\WinForms_Client\obj\Debug\netcoreapp3.1\WinForms_Client.csproj.CoreCompileInputs.cache

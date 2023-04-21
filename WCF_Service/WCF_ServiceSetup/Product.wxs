@@ -29,7 +29,7 @@
 	<Fragment>
 		<ComponentGroup Id="ProductComponents" Directory="INSTALLFOLDER">
 			<Component Id="Interfaces">
-				<File KeyPath="yes" Source="..\WCF_Service\bin\Debug\Interfaces.dll"></File>
+				<File KeyPath="yes" Source="..\Interfaces\bin\Debug\Interfaces.dll"></File>
 			</Component>
 			<Component Id="WCF_Service">
 				<File KeyPath="yes" Source="..\WCF_Service\bin\Debug\WCF_Service.exe"></File>

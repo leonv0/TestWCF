@@ -1,0 +1,14 @@
+C:\Users\leo\source\repos\TestWCF\WCF_Service\WCFWindowsFormsClient\obj\Debug\WCFWindowsFormsClient.csproj.AssemblyReference.cache
+C:\Users\leo\source\repos\TestWCF\WCF_Service\WCFWindowsFormsClient\obj\Debug\WCFWindowsFormsClient.csproj.SuggestedBindingRedirects.cache
+C:\Users\leo\source\repos\TestWCF\WCF_Service\WCFWindowsFormsClient\obj\Debug\WCFWindowsFormsClient.Properties.Resources.resources
+C:\Users\leo\source\repos\TestWCF\WCF_Service\WCFWindowsFormsClient\obj\Debug\WCFWindowsFormsClient.WCFClientForm.resources
+C:\Users\leo\source\repos\TestWCF\WCF_Service\WCFWindowsFormsClient\obj\Debug\WCFWindowsFormsClient.csproj.GenerateResource.cache
+C:\Users\leo\source\repos\TestWCF\WCF_Service\WCFWindowsFormsClient\obj\Debug\WCFWindowsFormsClient.csproj.CoreCompileInputs.cache
+C:\Users\leo\source\repos\TestWCF\WCF_Service\WCFWindowsFormsClient\bin\Debug\WCFWindowsFormsClient.exe.config
+C:\Users\leo\source\repos\TestWCF\WCF_Service\WCFWindowsFormsClient\bin\Debug\WCFWindowsFormsClient.exe
+C:\Users\leo\source\repos\TestWCF\WCF_Service\WCFWindowsFormsClient\bin\Debug\WCFWindowsFormsClient.pdb
+C:\Users\leo\source\repos\TestWCF\WCF_Service\WCFWindowsFormsClient\bin\Debug\Interfaces.dll
+C:\Users\leo\source\repos\TestWCF\WCF_Service\WCFWindowsFormsClient\bin\Debug\Interfaces.pdb
+C:\Users\leo\source\repos\TestWCF\WCF_Service\WCFWindowsFormsClient\obj\Debug\WCFWindowsFormsClient.csproj.CopyComplete
+C:\Users\leo\source\repos\TestWCF\WCF_Service\WCFWindowsFormsClient\obj\Debug\WCFWindowsFormsClient.exe
+C:\Users\leo\source\repos\TestWCF\WCF_Service\WCFWindowsFormsClient\obj\Debug\WCFWindowsFormsClient.pdb
