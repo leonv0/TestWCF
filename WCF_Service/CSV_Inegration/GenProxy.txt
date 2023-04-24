@@ -1,0 +1,2 @@
+﻿cd "C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.8 Tools"
+svcutil.exe  http://localhost:8899/SaveCSV /out:C:\del\PersonService.cs /config:C:\del\PersonService.config

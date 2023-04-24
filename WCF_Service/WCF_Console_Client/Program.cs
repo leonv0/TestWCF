@@ -13,6 +13,8 @@ namespace WCF_Console_Client
             TestServiceClient test = new TestServiceClient();
             string res = test.EchoTest("Send");
             Console.WriteLine(res);
+            TestObject2 res2 = (TestObject2)test.GetObject();
+            Console.WriteLine(res2.ToString());
             Console.ReadLine();
         }
     }
