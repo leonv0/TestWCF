@@ -225,3 +225,6 @@ AppPackages/
 # End of core ignore list, below put you custom 'per project' settings (patterns or path)
 #####
 /WCF_Service/DataBase/DataBase.jfm
+/WCF_Service/ReadConfiguration/bin/Debug/ReadConfiguration.CA.dll
+/WCF_Service/ReadConfiguration/bin/Debug/ReadConfiguration.pdb
+/WCF_Service/ReadConfiguration/bin/Debug/ReadConfiguration.dll
