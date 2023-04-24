@@ -228,3 +228,11 @@ AppPackages/
 /WCF_Service/ReadConfiguration/bin/Debug/ReadConfiguration.CA.dll
 /WCF_Service/ReadConfiguration/bin/Debug/ReadConfiguration.pdb
 /WCF_Service/ReadConfiguration/bin/Debug/ReadConfiguration.dll
+/WCF_Service/ReadConfiguration/obj/x86/Debug/ReadConfiguration.CA.dll
+/WCF_Service/WCF_Console_Client/obj/Debug/WCF_Console_Client.csproj.AssemblyReference.cache
+/WCF_Service/WCF_Service/obj/Debug/WCF_Service.csproj.AssemblyReference.cache
+/WCF_Service/ReadConfiguration/obj/x86/Debug/ReadConfiguration.dll
+/WCF_Service/ReadConfiguration/obj/x86/Debug/ReadConfiguration.pdb
+/WCF_Service/WCF_ServiceSetup/bin/Debug/cab1.cab
+/WCF_Service/WCF_ServiceSetup/bin/Debug/WCF_ServiceSetup.msi
+/WCF_Service/WCF_ServiceSetup/bin/Debug/WCF_ServiceSetup.wixpdb
