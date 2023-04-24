@@ -42,6 +42,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ClientSample", "ClientSampl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Collection_Console_Client", "Collection_Console_Client\Collection_Console_Client.csproj", "{FA7FBD0F-2FF3-4DCC-9E58-3A80DD5550B4}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{94EFCDB5-2C63-4147-B804-F86AD65566A3}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
