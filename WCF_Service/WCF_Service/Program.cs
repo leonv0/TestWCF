@@ -5,6 +5,7 @@ using System.ServiceModel.Description;
 using System.ServiceModel;
 using System.Text;
 using System.Threading.Tasks;
+using Interfaces;
 
 
 namespace WCF_Service
@@ -14,8 +15,10 @@ namespace WCF_Service
         static void Main(string[] args)
         {
             Uri baseAddress = new Uri("http://localhost:8888/test");
-            using (ServiceHost host = new ServiceHost(typeof(TestService), baseAddress))
+            var binding = new WSHttpBinding(SecurityMode.None); // NetTcpBinding();
+            using (ServiceHost host = new ServiceHost(typeof(TestService),  baseAddress))
             {
+                host.AddServiceEndpoint(typeof(ITestService), binding, baseAddress);
                 // Enable metadata publishing.
                 ServiceMetadataBehavior smb = new ServiceMetadataBehavior();
                 smb.HttpGetEnabled = true;
