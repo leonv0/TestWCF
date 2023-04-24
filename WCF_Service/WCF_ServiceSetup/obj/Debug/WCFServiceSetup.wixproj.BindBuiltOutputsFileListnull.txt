@@ -1,3 +1,0 @@
-C:\Users\leo\source\repos\TestWCF\WCF_Service\WCF_ServiceSetup\bin\Debug\cab1.cab
-C:\Users\leo\source\repos\TestWCF\WCF_Service\WCF_ServiceSetup\bin\Debug\WCF_ServiceSetup.msi
-C:\Users\leo\source\repos\TestWCF\WCF_Service\WCF_ServiceSetup\bin\Debug\WCF_ServiceSetup.wixpdb
