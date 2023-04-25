@@ -28,6 +28,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{94EFCDB5-2C63-4147-B804-F86AD65566A3}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
+		Sample.csv = Sample.csv
 		Test.cmd = Test.cmd
 	EndProjectSection
 EndProject
