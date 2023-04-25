@@ -2,7 +2,7 @@
 (
 	[ID] BIGINT NOT NULL,
 	[Flight_Number_ID] INT NOT NULL,
-	[Flight_Date] date NOT NULL,
+	[Flight_Sheduled_Date] date NOT NULL,
 	[Estimate_Arrival] datetime NULL,
 	[Arrival] datetime NULL
 )

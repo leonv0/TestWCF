@@ -1,0 +1,1 @@
+﻿netsh http add urlacl url=http://+:8866/test user=desktop-1tg1ikd\leo

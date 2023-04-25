@@ -12,18 +12,20 @@ using System.Runtime.Serialization;
 
 namespace WCF_Console_Client
 {
+    [DataContract]
+    [Serializable]
     public class TestObject2 : ITestObject2
     {
-        private int _id;
+        int _id;
         private string _name;
         [DataMember]
-        public int Id
-        {
-            get { return _id; }
-            set { _id = value; }
-        }
+        public int Id { get; set; }/*
+        { get { return _id; } 
+          set {_id = value;} 
+        }*/
         [DataMember]
-        public string Name
+        public string Name { get; set; }
+        /*
         {
             get { return _name; }
             set
@@ -32,6 +34,6 @@ namespace WCF_Console_Client
                 { throw new ArgumentNullException("Name not null"); }
                 _name = value;
             }
-        }
+        }*/
     }
 }

@@ -8,61 +8,207 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+namespace Interfaces
+{
+    using System.Runtime.Serialization;
+    
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Person", Namespace="http://schemas.datacontract.org/2004/07/Interfaces")]
+    public partial class Person : object, System.Runtime.Serialization.IExtensibleDataObject
+    {
+        
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        private System.Nullable<System.DateTime> ArrivalField;
+        
+        private string DocumentNumberField;
+        
+        private System.Nullable<System.DateTime> Estimate_ArrivalField;
+        
+        private string Flight_NumberField;
+        
+        private System.DateTime Flight_Sheduled_DateField;
+        
+        private System.TimeSpan Flight_Sheduled_TimeField;
+        
+        private string NameField;
+        
+        private string Reservation_NumberField;
+        
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData
+        {
+            get
+            {
+                return this.extensionDataField;
+            }
+            set
+            {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<System.DateTime> Arrival
+        {
+            get
+            {
+                return this.ArrivalField;
+            }
+            set
+            {
+                this.ArrivalField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string DocumentNumber
+        {
+            get
+            {
+                return this.DocumentNumberField;
+            }
+            set
+            {
+                this.DocumentNumberField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<System.DateTime> Estimate_Arrival
+        {
+            get
+            {
+                return this.Estimate_ArrivalField;
+            }
+            set
+            {
+                this.Estimate_ArrivalField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Flight_Number
+        {
+            get
+            {
+                return this.Flight_NumberField;
+            }
+            set
+            {
+                this.Flight_NumberField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.DateTime Flight_Sheduled_Date
+        {
+            get
+            {
+                return this.Flight_Sheduled_DateField;
+            }
+            set
+            {
+                this.Flight_Sheduled_DateField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.TimeSpan Flight_Sheduled_Time
+        {
+            get
+            {
+                return this.Flight_Sheduled_TimeField;
+            }
+            set
+            {
+                this.Flight_Sheduled_TimeField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Name
+        {
+            get
+            {
+                return this.NameField;
+            }
+            set
+            {
+                this.NameField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Reservation_Number
+        {
+            get
+            {
+                return this.Reservation_NumberField;
+            }
+            set
+            {
+                this.Reservation_NumberField = value;
+            }
+        }
+    }
+}
 
 
 [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-[System.ServiceModel.ServiceContractAttribute(ConfigurationName="ICSVImport")]
-public interface ICSVImport
+[System.ServiceModel.ServiceContractAttribute(ConfigurationName="ImportCSVService")]
+public interface ImportCSVService
 {
     
-    [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICSVImport/EchoTest", ReplyAction="http://tempuri.org/ICSVImport/EchoTestResponse")]
-    void SaveCSV(object ListPersons);
+    [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ImportCSVService/SaveCSV", ReplyAction="http://tempuri.org/ImportCSVService/SaveCSVResponse")]
+    void SaveCSV(Interfaces.Person pers);
     
-    [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICSVImport/EchoTest", ReplyAction="http://tempuri.org/ICSVImport/EchoTestResponse")]
-    System.Threading.Tasks.Task SaveCSVAsync(object ListPersons);
+    [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ImportCSVService/SaveCSV", ReplyAction="http://tempuri.org/ImportCSVService/SaveCSVResponse")]
+    System.Threading.Tasks.Task SaveCSVAsync(Interfaces.Person pers);
 }
 
 [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-public interface ICSVImportChannel : ICSVImport, System.ServiceModel.IClientChannel
+public interface ImportCSVServiceChannel : ImportCSVService, System.ServiceModel.IClientChannel
 {
 }
 
 [System.Diagnostics.DebuggerStepThroughAttribute()]
 [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-public partial class CSVImportClient : System.ServiceModel.ClientBase<ICSVImport>, ICSVImport
+public partial class ImportCSVServiceClient : System.ServiceModel.ClientBase<ImportCSVService>, ImportCSVService
 {
     
-    public CSVImportClient()
+    public ImportCSVServiceClient()
     {
     }
     
-    public CSVImportClient(string endpointConfigurationName) : 
+    public ImportCSVServiceClient(string endpointConfigurationName) : 
             base(endpointConfigurationName)
     {
     }
     
-    public CSVImportClient(string endpointConfigurationName, string remoteAddress) : 
+    public ImportCSVServiceClient(string endpointConfigurationName, string remoteAddress) : 
             base(endpointConfigurationName, remoteAddress)
     {
     }
     
-    public CSVImportClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
+    public ImportCSVServiceClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
             base(endpointConfigurationName, remoteAddress)
     {
     }
     
-    public CSVImportClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
+    public ImportCSVServiceClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
             base(binding, remoteAddress)
     {
     }
     
-    public void SaveCSV(object ListPersons)
+    public void SaveCSV(Interfaces.Person pers)
     {
-        base.Channel.SaveCSV(ListPersons);
+        base.Channel.SaveCSV(pers);
     }
     
-    public System.Threading.Tasks.Task SaveCSVAsync(object ListPersons)
+    public System.Threading.Tasks.Task SaveCSVAsync(Interfaces.Person pers)
     {
-        return base.Channel.SaveCSVAsync(ListPersons);
+        return base.Channel.SaveCSVAsync(pers);
     }
 }

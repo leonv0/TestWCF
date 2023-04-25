@@ -16,16 +16,20 @@ namespace Interfaces
         string Name { get; set; }
     }
 
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(ConfigurationName = "ITestService")]
+    //[System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    //[System.ServiceModel.ServiceContractAttribute(ConfigurationName = "ITestService")]
+    
     public interface ITestService
     {
 
-        [System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/ITestService/EchoTest", ReplyAction = "http://tempuri.org/ITestService/EchoTestResponse")]
-        string EchoTest(string msg);
+        //[System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/ITestService/EchoTest", ReplyAction = "http://tempuri.org/ITestService/EchoTestResponse")]
+        //string EchoTest(string msg);
 
-        [System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/ITestService/GetObject", ReplyAction = "http://tempuri.org/ITestService/GetObjectResponse")]
+        // [System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/ITestService/GetObject", ReplyAction = "http://tempuri.org/ITestService/GetObjectResponse")]
+ 
         ITestObject2 GetObject();
+
+        ITestObject2 SaveObject(ITestObject2 param);
 
     }
 }

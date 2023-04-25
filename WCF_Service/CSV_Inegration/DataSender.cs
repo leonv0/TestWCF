@@ -10,15 +10,14 @@ using Microsoft.VisualBasic.FileIO;
 using System.Runtime.Serialization;
 using System.ServiceModel.Description;
 using System.ServiceModel;
-using CSV_Inegration.CSV_Inegration;
+
 
 namespace CSV_Inegration
 {
     internal class DataSender
     {
         string _FileName;
-        private ListPersons _listpersons;
-        private CSVImportClient _client;
+        private ImportCSVServiceClient _client;
 
         internal DataSender(string FileName)
         {
@@ -29,16 +28,14 @@ namespace CSV_Inegration
             _FileName = FileName;
         }
         //
-        internal void Read()
+        internal void Send()
         {
-            int lines = File.ReadAllLines(_FileName).Length;
+            _client = new ImportCSVServiceClient();
             //parse file in list
             using (TextFieldParser parser = new TextFieldParser(_FileName))
             {
 
-                int i = 0;
                 
-                _listpersons = new ListPersons(lines);
                 parser.TextFieldType = FieldType.Delimited;
                 parser.SetDelimiters(",");
                 while (!parser.EndOfData)
@@ -56,29 +53,23 @@ namespace CSV_Inegration
                         Reservation_Number = fields[6],
                         DocumentNumber = fields[7]
                     };
+                    try
+                    {
+                        _client.SaveCSV(person);
 
-                    _listpersons.PersonList[i] = person;
-                    i++;
+
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine(ex.ToString());
+                        return;
+                    }
                 }
+                parser.Close();
             }
 
         }
         //send data
-        internal void SendList()
-        {
-            _client = new CSVImportClient();
-
-
-            try
-            {
-                _client.SaveCSV(_listpersons);
-
-                
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine (ex.ToString());
-            }
-        }
+        
     }
 }

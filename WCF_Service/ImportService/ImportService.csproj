@@ -62,12 +62,11 @@
     <Compile Include="ImportCSVService.cs" />
     <Compile Include="EF\Model.cs" />
     <Compile Include="EF\Passenger.cs" />
-    <Compile Include="ListPersons.cs" />
-    <Compile Include="Person.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="EF\Registration.cs" />
     <Compile Include="EF\Session.cs" />
+    <Compile Include="SaveHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -78,6 +77,9 @@
       <Project>{6e1d608f-87e7-45b5-acc0-90a1c6377107}</Project>
       <Name>Interfaces</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="tools.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

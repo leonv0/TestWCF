@@ -31,8 +31,7 @@ namespace CSV_Inegration
         private void OnCreated(object sender, FileSystemEventArgs e)
         {
             DataSender ds = new DataSender(e.FullPath);
-            ds.Read();
-            ds.SendList();
+            ds.Send();
         }
 
         private void OnError(object sender, ErrorEventArgs e) =>

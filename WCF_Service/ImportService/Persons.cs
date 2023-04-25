@@ -1,16 +1,19 @@
-﻿using Interfaces;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.Serialization;
+using System.ServiceModel;
+using System.ServiceModel.Description;
 using System.Text;
 using System.Threading.Tasks;
+using Interfaces;
+using System.Runtime.Serialization;
 
-namespace Interfaces
+
+namespace ClassInterfaces
 {
     [DataContract]
     [Serializable]
-    public class Person : Interfaces.IPerson
+    public class Person: IPerson
     {
         [DataMember]
         public string Flight_Number { get; set; }
@@ -28,8 +31,7 @@ namespace Interfaces
         public string Reservation_Number { get; set; }
         [DataMember]
         public string DocumentNumber { get; set; }
-
     }
-}
- 
+    
 
+}

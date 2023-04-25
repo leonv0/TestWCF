@@ -59,8 +59,6 @@
     <Compile Include="CSVIntegratonService.cs" />
     <Compile Include="DataSender.cs" />
     <Compile Include="CSV_FolderWatch.cs" />
-    <Compile Include="ListPersons.cs" />
-    <Compile Include="Person.cs" />
     <Compile Include="PersonService.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

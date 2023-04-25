@@ -8,34 +8,90 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+namespace WCF_Service
+{
+    using System.Runtime.Serialization;
+    
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="TestObject2", Namespace="http://schemas.datacontract.org/2004/07/WCF_Service")]
+    public partial class TestObject2 : object, System.Runtime.Serialization.IExtensibleDataObject
+    {
+        
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        private int IdField;
+        
+        private string NameField;
+        
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData
+        {
+            get
+            {
+                return this.extensionDataField;
+            }
+            set
+            {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int Id
+        {
+            get
+            {
+                return this.IdField;
+            }
+            set
+            {
+                this.IdField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Name
+        {
+            get
+            {
+                return this.NameField;
+            }
+            set
+            {
+                this.NameField = value;
+            }
+        }
+    }
+}
 
 
 [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-[System.ServiceModel.ServiceContractAttribute(ConfigurationName="ITestService")]
-public interface ITestService
+[System.ServiceModel.ServiceContractAttribute(ConfigurationName="TestService")]
+public interface TestService
 {
     
-    [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ITestService/EchoTest", ReplyAction="http://tempuri.org/ITestService/EchoTestResponse")]
-    string EchoTest(string msg);
+    [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/TestService/GetObject", ReplyAction="http://tempuri.org/TestService/GetObjectResponse")]
+    WCF_Service.TestObject2 GetObject();
     
-    [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ITestService/EchoTest", ReplyAction="http://tempuri.org/ITestService/EchoTestResponse")]
-    System.Threading.Tasks.Task<string> EchoTestAsync(string msg);
+    [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/TestService/GetObject", ReplyAction="http://tempuri.org/TestService/GetObjectResponse")]
+    System.Threading.Tasks.Task<WCF_Service.TestObject2> GetObjectAsync();
     
-    [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ITestService/GetObject", ReplyAction="http://tempuri.org/ITestService/GetObjectResponse")]
-    object GetObject();
+    [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/TestService/SaveObject", ReplyAction="http://tempuri.org/TestService/SaveObjectResponse")]
+    WCF_Service.TestObject2 SaveObject(WCF_Service.TestObject2 param);
     
-    [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ITestService/GetObject", ReplyAction="http://tempuri.org/ITestService/GetObjectResponse")]
-    System.Threading.Tasks.Task<object> GetObjectAsync();
+    [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/TestService/SaveObject", ReplyAction="http://tempuri.org/TestService/SaveObjectResponse")]
+    System.Threading.Tasks.Task<WCF_Service.TestObject2> SaveObjectAsync(WCF_Service.TestObject2 param);
 }
 
 [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-public interface ITestServiceChannel : ITestService, System.ServiceModel.IClientChannel
+public interface TestServiceChannel : TestService, System.ServiceModel.IClientChannel
 {
 }
 
 [System.Diagnostics.DebuggerStepThroughAttribute()]
 [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-public partial class TestServiceClient : System.ServiceModel.ClientBase<ITestService>, ITestService
+public partial class TestServiceClient : System.ServiceModel.ClientBase<TestService>, TestService
 {
     
     public TestServiceClient()
@@ -62,23 +118,23 @@ public partial class TestServiceClient : System.ServiceModel.ClientBase<ITestSer
     {
     }
     
-    public string EchoTest(string msg)
-    {
-        return base.Channel.EchoTest(msg);
-    }
-    
-    public System.Threading.Tasks.Task<string> EchoTestAsync(string msg)
-    {
-        return base.Channel.EchoTestAsync(msg);
-    }
-    
-    public object GetObject()
+    public WCF_Service.TestObject2 GetObject()
     {
         return base.Channel.GetObject();
     }
     
-    public System.Threading.Tasks.Task<object> GetObjectAsync()
+    public System.Threading.Tasks.Task<WCF_Service.TestObject2> GetObjectAsync()
     {
         return base.Channel.GetObjectAsync();
+    }
+    
+    public WCF_Service.TestObject2 SaveObject(WCF_Service.TestObject2 param)
+    {
+        return base.Channel.SaveObject(param);
+    }
+    
+    public System.Threading.Tasks.Task<WCF_Service.TestObject2> SaveObjectAsync(WCF_Service.TestObject2 param)
+    {
+        return base.Channel.SaveObjectAsync(param);
     }
 }

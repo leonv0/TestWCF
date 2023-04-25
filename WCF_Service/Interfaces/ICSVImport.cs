@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 
 namespace Interfaces
 {
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(ConfigurationName = "ICSVImport")]
+    //[System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    //[System.ServiceModel.ServiceContractAttribute(ConfigurationName = "ICSVImport")]
     public interface ICSVImport
     {
-        [System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/ICSVImport/EchoTest", ReplyAction = "http://tempuri.org/ICSVImport/EchoTestResponse")]
+        //[System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/ICSVImport/EchoTest", ReplyAction = "http://tempuri.org/ICSVImport/EchoTestResponse")]
 
-        void SaveCSV(IListPersons ListPersons);
+        void SaveCSV(Person pers);
     }
     
 }

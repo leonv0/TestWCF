@@ -11,10 +11,13 @@ namespace WCF_Console_Client
         static void Main(string[] args)
         {
             TestServiceClient test = new TestServiceClient();
-            string res = test.EchoTest("Send");
-            Console.WriteLine(res);
-            TestObject2 res2 = (TestObject2)test.GetObject();
-            Console.WriteLine(res2.ToString());
+            //string res = test.EchoTest("Send");
+            //Console.WriteLine(res);
+            WCF_Service.TestObject2 param = new WCF_Service.TestObject2 { Id = 2, Name = "Send 2" };
+            var res2 = test.GetObject();
+            Console.WriteLine(res2.Name.ToString());
+            var res3 = test.SaveObject(param);
+            Console.WriteLine(res3.Name.ToString());
             Console.ReadLine();
         }
     }
