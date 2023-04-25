@@ -23,7 +23,7 @@ namespace ImportService
                 serializer.Serialize(writer, pers);
             }
 
-            //SaveHelper sh = new SaveHelper(@"Data Source=(local);Initial Catalog=DataBase;Integrated Security=true",pers);
+            SaveHelper sh = new SaveHelper(@"Data Source=(local);Initial Catalog=DataBase;Integrated Security=true",pers);
 
             
         }

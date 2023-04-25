@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[Session]
 (
-	[ID] BIGINT NOT NULL, 
+	[ID] BIGINT NOT NULL identity(1,1), 
     [Login] VARCHAR(256) NOT NULL, 
     [ARM_ID] INT NOT NULL, 
     [StartTime] DATETIME NOT NULL, 

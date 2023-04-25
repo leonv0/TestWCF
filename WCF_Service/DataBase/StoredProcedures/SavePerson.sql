@@ -10,6 +10,8 @@
 AS
 BEGIN
     if object_id('tempdb..NumTempTable') is not null drop table #NumTempTable
+    CREATE TABLE #NumTempTable (ID bigint not null,[ACT] varchar(32) not null)
+
         BEGIN
             MERGE 
             INTO [Flight_Number] fn
@@ -43,7 +45,7 @@ BEGIN
             WHEN NOT MATCHED THEN  
             INSERT ([Flight_Number_ID],[Flight_Sheduled_Date],[Estimate_Arrival],[Arrival])
             VALUES (i.[Flight_Number_ID],i.[Flight_Sheduled_Date],i.[Estimate_Arrival],i.[Arrival])
-            OUTPUT inserted.[ID], inserted.[Flight_Number_ID],inserted.[Flight_Sheduled_Date], $action as [Act] INTO #NumTempTable; 
+            OUTPUT inserted.[ID], $action as [Act] INTO #NumTempTable; 
         END
 
         BEGIN
@@ -52,7 +54,7 @@ BEGIN
             USING (
                 SELECT n.ID,@Name,@Reservation_Number,@DocumentNumber
                     FROM #NumTempTable n 
-                    ) i ([Flight_ID],[Reservation_Number],[DocumentNumber])
+                    ) i ([Flight_ID],[Name],[Reservation_Number],[DocumentNumber])
             ON 
             p.[Flight_ID] = i.[Flight_ID]
             and p.[Name] = @Name
