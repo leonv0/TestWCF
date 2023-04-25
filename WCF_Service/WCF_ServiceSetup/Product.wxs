@@ -32,11 +32,36 @@
 				<File KeyPath="yes" Source="..\Interfaces\bin\Debug\Interfaces.dll"></File>
 			</Component>
 			<Component Id="WCF_Service">
-				<File KeyPath="yes" Source="..\WCF_Service\bin\Debug\WCF_Service.exe"></File>
+				<File KeyPath="yes" Source="..\CSV_Inegration\bin\Debug\CSV_Inegration.exe"></File>
 			</Component>
-			<Component Id="ReadMe">
-				<File KeyPath="yes" Source="ReadMe.txt"></File>
+			<Component Id="WCF_ServiceConfig">
+				<File KeyPath="yes" Source="..\CSV_Inegration\bin\Debug\CSV_Inegration.exe.config"></File>
 			</Component>
+			<Component Id="WCF_ServiceTopshelfdll">
+				<File KeyPath="yes" Source="..\CSV_Inegration\bin\Debug\Topshelf.dll"></File>
+			</Component>
+			<Component Id="WCF_ServiceTopshelfxml">
+				<File KeyPath="yes" Source="..\CSV_Inegration\bin\Debug\Topshelf.xml"></File>
+			</Component>
+			<Component Id="WCF_ServiceEntityFrameworkdll">
+				<File KeyPath="yes" Source="..\ImportService\bin\Debug\EntityFramework.dll"></File>
+			</Component>
+			<Component Id="WCF_ServiceEntityFramework.SqlServerdll">
+				<File KeyPath="yes" Source="..\ImportService\bin\Debug\EntityFramework.SqlServer.dll"></File>
+			</Component>
+			<Component Id="WCF_ServiceEntityFramework.SqlServerxml">
+				<File KeyPath="yes" Source="..\ImportService\bin\Debug\EntityFramework.SqlServer.xml"></File>
+			</Component>
+			<Component Id="WCF_ServiceEntityFrameworkxml">
+				<File KeyPath="yes" Source="..\ImportService\bin\Debug\EntityFramework.xml"></File>
+			</Component>
+			<Component Id="WCF_ServiceImportServiceexe">
+				<File KeyPath="yes" Source="..\ImportService\bin\Debug\ImportService.exe"></File>
+			</Component>
+			<Component Id="WCF_ServiceImportServiceexeconfig">
+				<File KeyPath="yes" Source="..\ImportService\bin\Debug\ImportService.exe.config"></File>
+			</Component>
+
 
 			<!-- TODO: Remove the comments around this Component element and the ComponentRef below in order to add resources to this installer. -->
 			<!-- <Component Id="ProductComponent"> -->
